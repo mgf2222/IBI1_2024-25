@@ -1,5 +1,3 @@
-This is an example file for reflection in IBI1_2024-25.
-
-During this course, I have learnt version control, how to navigate Unix-like systems and how to write simple programs in Python.
-
-I have also learnt to write careful instructions when communicating online!
+Today I learned the fundamentals of using Git and GitHub for version control,.
+I learned about creating and initializing repositories, staging and committing changes, checking status and history, managing branches, 
+resolving merge conflicts, and pushing changes to a remote repository on GitHub.
