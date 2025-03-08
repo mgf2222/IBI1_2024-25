@@ -1,6 +1,6 @@
 I don't like coffee.
 I very like rainy days.
-I like hiking in nature.
+I really like hiking in nature.
 I like learning new languages.
 I like cooking delicious meals.
 I like playing board games.
@@ -10,3 +10,4 @@ I like traveling to new places.
 I like trying new foods.
 I like spending time with friends.
 I like watching movies.
+I dislike eating potatoes.
