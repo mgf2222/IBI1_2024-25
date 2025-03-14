@@ -52,6 +52,3 @@ print(f"T | F | {W if X and not Y else 'F'}")
 print(f"F | T | {W if not X and Y else 'F'}")
 print(f"F | F | {W if not X and not Y else 'F'}")
 
-# Alternatively, print the specific result based on the current values of X and Y
-print(f"\nCurrent values: X = {X}, Y = {Y}")
-print(f"W = X and Y = {W}")
