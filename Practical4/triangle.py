@@ -1,8 +1,9 @@
-# 1. Initialize a variable to keep track of the current number (n)
-# 2. For each number from 1 to 10:
-#    a. Calculate the triangular number using the formula n*(n+1)/2
-#    b. Print the result
-
+'''
+1. Initialize a variable to keep track of the current number (n)
+2. For each number from 1 to 10:
+    a. Calculate the triangular number using the formula n*(n+1)/2
+    b. Print the result
+'''
 # Initialize the starting value for n
 n = 1
 
