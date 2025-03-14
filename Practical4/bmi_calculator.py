@@ -1,3 +1,14 @@
+'''
+Pseudocode
+1. Prompt the user to enter their weight in kilograms and convert it to a float, store in variable weight
+2. Prompt the user to enter their height in meters and convert it to a float, store in variable height
+3. Calculate the BMI using the formula: BMI = weight / (height * height), store result in variable bmi
+4. Determine the weight category based on BMI value:
+   a. If bmi < 18.5, set category to "underweight"
+   b. If 18.5 ≤ bmi ≤ 30, set category to "normal weight"
+   c. If bmi > 30, set category to "obese"
+5. Print the result using a formatted string that includes the BMI value and weight category
+'''
 # Get the person's weight in kilograms from user input and convert it to a float
 weight = float(input("Enter weight in kilograms: "))
 
