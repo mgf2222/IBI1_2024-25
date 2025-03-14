@@ -34,3 +34,19 @@ else:
     print("The car commute is quicker.")
 # Since c is 90 and f is 95, c > f is False, so "The car commute is quicker." will be printed
 # The car commute is quicker because f (95 minutes) is less than c (90 minutes)
+
+# Boolean variables
+
+# Initialize X as True and Y as False
+X = True
+Y = False
+
+# Create a new variable W which is 'both X and Y'
+W = X and Y
+
+# Truth table for W
+# X | Y | W
+# T | T | T
+# T | F | F
+# F | T | F
+# F | F | F
