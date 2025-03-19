@@ -1,6 +1,0 @@
-Today I learned the fundamentals of using Git and GitHub for version control,.
-I learned about creating and initializing repositories, staging and committing changes, checking status and history, managing branches, 
-resolving merge conflicts, and pushing changes to a remote repository on GitHub.
-At first, I found it difficult to remember the various commands and their specific syntax, such as distinguishing between git add and git commit.
-I also struggle with version control and merging different branches.
-However, I have overcomed all difficulties and succeeded to creat my first project in GitHub.
