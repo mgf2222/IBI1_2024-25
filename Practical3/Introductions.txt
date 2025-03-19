@@ -1,0 +1,6 @@
+Hello, my name is Zeng Yanbo.
+I like drinking milk and eating apples.
+I am enjoying studying IBI1.
+I like exercise.
+I am excited to learn more about how to control the version in VScode.
+I am happy that I can learn more about how to use git and github.
