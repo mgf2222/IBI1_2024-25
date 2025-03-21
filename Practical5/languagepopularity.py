@@ -58,9 +58,3 @@ plt.tight_layout()
 plt.show()
 
 
-# Retrieve and display usage data
-usage = language_popularity.get(TARGET_LANGUAGE, None)
-if usage:
-    print(f"\nUsage percentage for {TARGET_LANGUAGE}: {usage}%")
-else:
-    print(f"\nLanguage '{TARGET_LANGUAGE}' not found in dataset")
