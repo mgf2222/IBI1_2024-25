@@ -25,25 +25,24 @@ uk_nations = ["England", "Wales", "Northern Ireland", "Scotland"]
 zhejiang_neighbours = [65.77, 41.88, 45.28, 61.27, 85.15]
 china_provinces = ["Zhejiang", "Fujian", "Jiangxi", "Anhui", "Jiangsu"]
 
-# ========== DATA PROCESSING ==========
-# PSEUDOCODE: SORT POPULATION DATA DESCENDING
+
 uk_sorted = sorted(uk_countries, reverse=True)
 print("Sorted UK countries population (in millions):")
 print(uk_sorted)
 
-# PSEUDOCODE: SORT NEIGHBORING PROVINCES DESCENDING
+
 china_sorted = sorted(zhejiang_neighbours, reverse=True)
 print("\nSorted Zhejiang-neighboring provinces population (in millions):")
 print(china_sorted)
 
-# ========== VISUALIZATION ==========
+
 import matplotlib.pyplot as plt
 
 # Configure plot aesthetics
 plt.style.use('seaborn-v0_8-muted')
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 7))
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
 
-# PSEUDOCODE: GENERATE UK POPULATION PIE CHART
+
 ax1.pie(
     uk_countries,
     labels=uk_nations,
@@ -54,7 +53,7 @@ ax1.pie(
 )
 ax1.set_title('UK Countries Population Distribution', fontsize=14)
 
-# PSEUDOCODE: GENERATE CHINESE PROVINCES PIE CHART
+
 ax2.pie(
     zhejiang_neighbours,
     labels=china_provinces,
