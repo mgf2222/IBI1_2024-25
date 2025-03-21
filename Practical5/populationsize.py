@@ -1,4 +1,5 @@
 # ========== Pseudocode Structure ==========
+
 '''
 1. Data Preparation:
     - Initialize two datasets:
@@ -16,54 +17,58 @@
 4. Display visualizations
 '''
 
-# ========== DATA PREPARATION ==========
-# UK constituent countries population (millions)
-uk_countries = [57.11, 3.13, 1.91, 5.45]
-uk_nations = ["England", "Wales", "Northern Ireland", "Scotland"]
 
-# Zhejiang-neighboring Chinese provinces population (millions)
-zhejiang_neighbours = [65.77, 41.88, 45.28, 61.27, 85.15]
-china_provinces = ["Zhejiang", "Fujian", "Jiangxi", "Anhui", "Jiangsu"]
+# Define population data for UK constituent countries
+# UK constituent countries population (in millions)
+uk_countries = [57.11, 3.13, 1.91, 5.45]  # Population data for England, Wales, Northern Ireland, and Scotland
+uk_nations = ["England", "Wales", "Northern Ireland", "Scotland"]  # Names of the UK constituent countries
+
+# Define population data for Zhejiang-neighboring provinces in China
+# Zhejiang-neighboring Chinese provinces population (in millions)
+zhejiang_neighbours = [65.77, 41.88, 45.28, 61.27, 85.15]  # Population data for Zhejiang, Fujian, Jiangxi, Anhui, and Jiangsu
+china_provinces = ["Zhejiang", "Fujian", "Jiangxi", "Anhui", "Jiangsu"]  # Names of the provinces
 
 
-uk_sorted = sorted(uk_countries, reverse=True)
-print("Sorted UK countries population (in millions):")
+# Sort UK population data in descending order
+uk_sorted = sorted(uk_countries, reverse=True)  # Sort the list from largest to smallest
+print("Sorted UK countries population (in millions):")  # Print the sorted list
 print(uk_sorted)
 
-
-china_sorted = sorted(zhejiang_neighbours, reverse=True)
-print("\nSorted Zhejiang-neighboring provinces population (in millions):")
+# Sort Chinese provinces population data in descending order
+china_sorted = sorted(zhejiang_neighbours, reverse=True)  # Sort the list from largest to smallest
+print("\nSorted Zhejiang-neighboring provinces population (in millions):")  # Print the sorted list
 print(china_sorted)
 
 
+# Import the pyplot module from matplotlib to create visualizations
 import matplotlib.pyplot as plt
 
-# Configure plot aesthetics
-plt.style.use('seaborn-v0_8-muted')
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
+# Configure the visual style of the plots
+plt.style.use('seaborn-v0_8-muted')  # Use a specific style for better aesthetics
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))  # Create a figure with two subplots side by side
 
-
+# Create a pie chart for UK population distribution
 ax1.pie(
-    uk_countries,
-    labels=uk_nations,
-    autopct='%1.1f%%',
-    startangle=90,
-    shadow=True,
-    colors=['#ff9999', '#66b3ff', '#99ff99', '#ffcc99']
+    uk_countries,  # Population data
+    labels=uk_nations,  # Labels for each slice
+    autopct='%1.1f%%',  # Display percentage on each slice
+    startangle=90,  # Start angle for the first slice
+    shadow=True,  # Add shadow for depth
+    colors=['#ff9999', '#66b3ff', '#99ff99', '#ffcc99']  # Custom colors for each slice
 )
-ax1.set_title('UK Countries Population Distribution', fontsize=14)
+ax1.set_title('UK Countries Population Distribution', fontsize=14)  # Set title for the chart
 
-
+# Create a pie chart for Chinese provinces population distribution
 ax2.pie(
-    zhejiang_neighbours,
-    labels=china_provinces,
-    autopct='%1.1f%%',
-    startangle=90,
-    shadow=True,
-    colors=['#ff6666', '#66b3ff', '#99ff99', '#ffcc99', '#c2c2f0']
+    zhejiang_neighbours,  # Population data
+    labels=china_provinces,  # Labels for each slice
+    autopct='%1.1f%%',  # Display percentage on each slice
+    startangle=90,  # Start angle for the first slice
+    shadow=True,  # Add shadow for depth
+    colors=['#ff6666', '#66b3ff', '#99ff99', '#ffcc99', '#c2c2f0']  # Custom colors for each slice
 )
-ax2.set_title('Zhejiang-neighboring Provinces Population Distribution', fontsize=14)
+ax2.set_title('Zhejiang-neighboring Provinces Population Distribution', fontsize=14)  # Set title for the chart
 
-# Finalize and display
-plt.tight_layout()
-plt.show()
+# Adjust layout and display the plots
+plt.tight_layout()  # Ensure all elements fit well within the figure
+plt.show()  # Display the charts
