@@ -57,10 +57,6 @@ plt.grid(axis='y', alpha=0.3)
 plt.tight_layout()
 plt.show()
 
-# Language query implementation
-# ====== Configurable Parameter ======
-TARGET_LANGUAGE = "Python"
-# ====================================
 
 # Retrieve and display usage data
 usage = language_popularity.get(TARGET_LANGUAGE, None)
