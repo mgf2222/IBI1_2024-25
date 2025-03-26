@@ -1,4 +1,4 @@
-# ========== Pseudocode Structure ==========
+# Pseudocode 
 
 '''
 1. Data Preparation:

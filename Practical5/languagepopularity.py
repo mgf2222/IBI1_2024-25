@@ -1,4 +1,4 @@
-# ========== Pseudocode Structure ==========
+# Pseudocode 
 '''
 1. Initialize dictionary with language popularity data
     - Key: Language name (string)
