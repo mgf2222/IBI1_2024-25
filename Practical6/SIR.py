@@ -13,7 +13,12 @@ R = [0]     # Recovered
 
 # Number of time steps to simulate
 num_time_steps = 1000
-
+'''for each time step in num_time_steps:
+    get the current values of S, I, R
+    calculate the infection probability for susceptibles
+    determine new infections based on infection probability
+    determine new recoveries based on recovery rate
+    update the compartments S, I, R'''
 # Simulate over time
 for _ in range(num_time_steps):
     current_S = S[-1]
