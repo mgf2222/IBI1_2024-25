@@ -8,7 +8,7 @@
 n = 1
 
 # Loop to calculate and display the first ten triangular numbers
-while n <= 10:
+for n in range (1,11):
     # Calculate triangular number using the formula
     triangular_number = n * (n + 1) // 2
     
