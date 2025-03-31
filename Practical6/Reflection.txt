@@ -1,0 +1,6 @@
+I think this class is a little hard.
+I find that it is difficult to understand the time step and draw the figure correctly.
+However, I solve the problem with the help of my friends.
+I think it is interesting to learn to draw the figure based on the SIR model.
+The most important thing I learaned is that I gained a deeper understanding of how the parameters in the SIR model (such as the infection rate and recovery rate) influence disease transmission.
+Besides, I learned how to use NumPy to simulate random events, which is crucial for modeling uncertainties in real-world scenarios.
