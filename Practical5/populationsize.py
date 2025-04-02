@@ -51,7 +51,7 @@ fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))  # Create a figure with tw
 ax1.pie(
     uk_countries,  # Population data
     labels=uk_nations,  # Labels for each slice
-    autopct='%1.1f%%',  # Display percentage on each slice
+    autopct='%1.2f%%',  # Display percentage on each slice
     startangle=90,  # Start angle for the first slice
     shadow=True,  # Add shadow for depth
     colors=['#ff9999', '#66b3ff', '#99ff99', '#ffcc99']  # Custom colors for each slice
@@ -62,7 +62,7 @@ ax1.set_title('UK Countries Population Distribution', fontsize=14)  # Set title 
 ax2.pie(
     zhejiang_neighbours,  # Population data
     labels=china_provinces,  # Labels for each slice
-    autopct='%1.1f%%',  # Display percentage on each slice
+    autopct='%1.2f%%',  # Display percentage on each slice
     startangle=90,  # Start angle for the first slice
     shadow=True,  # Add shadow for depth
     colors=['#ff6666', '#66b3ff', '#99ff99', '#ffcc99', '#c2c2f0']  # Custom colors for each slice
