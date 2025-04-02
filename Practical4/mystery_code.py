@@ -1,6 +1,7 @@
 # What does this piece of code do?
 # Answer: The code simulates rolling two six-sided dice repeatedly until they show the same number.
 # It then prints the number of attempts it took to achieve this match.
+
 # Import libraries
 # randint allows drawing a random number,
 # e.g. randint(1,5) draws a number between 1 and 5
