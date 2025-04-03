@@ -37,7 +37,7 @@ Y = False
 
 # Create variable W which is 'both X and Y'
 W = X and Y
-
+print(W)
 # Truth table for W (X AND Y)
 """
 X   |   Y   |   W
