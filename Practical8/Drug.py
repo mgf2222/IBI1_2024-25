@@ -1,3 +1,4 @@
+
 def calculate_paracetamol_volume(weight, strength):
     # Check weight is within the allowed range
     if weight < 10 or weight > 100:
