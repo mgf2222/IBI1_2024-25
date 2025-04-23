@@ -72,3 +72,35 @@ plt.show()
 china = dalys_data.loc[dalys_data["Entity"] == "China", ["DALYs", "Year"]]
 uk = dalys_data.loc[dalys_data["Entity"] == "United Kingdom", ["DALYs", "Year"]]
 
+# Import required libraries
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load dataset (assuming data is already loaded as dalys_data)
+# Pseudocode: 
+# 1. IMPORT pandas and matplotlib
+# 2. LOAD CSV data into DataFrame
+# 3. FILTER country-specific data using loc
+# 4. CONFIGURE plot parameters
+# 5. GENERATE comparative visualization
+
+# Filter data for China and UK using loc[3,5](@ref)
+china_data = dalys_data.loc[dalys_data["Entity"] == "China", ["DALYs", "Year"]]
+uk_data = dalys_data.loc[dalys_data["Entity"] == "United Kingdom", ["DALYs", "Year"]]
+
+# Configure plot settings[7,8](@ref)
+plt.figure(figsize=(10, 6))
+plt.plot(china_data.Year, china_data.DALYs, 'r-', label='China')
+plt.plot(uk_data.Year, uk_data.DALYs, 'b--', label='UK')
+
+# Add chart labels and decorations[9](@ref)
+plt.title("DALYs Trend Comparison: China vs UK")
+plt.xlabel("Year")
+plt.ylabel("DALYs per 100,000")
+plt.xticks(rotation=45)          # Rotate x-axis labels for readability
+plt.grid(True, alpha=0.3)       # Add semi-transparent gridlines
+plt.legend()                    # Show data labels
+plt.tight_layout()              # Optimize spacing[8](@ref)
+
+# Display visualization
+plt.show()

@@ -1,0 +1,15 @@
+Question: How has the DALYs trend in China compared to the United Kingdom from 1990 to 2019?
+Code Line: Line 75 (filtering and plotting code starts here)
+Result Discussion:
+1. Trend Observations:
+   - China's DALYs decreased significantly from ~28,000 (1990) to ~15,000 (2019), a 46% reduction.
+   - The UK's DALYs remained relatively stable, fluctuating between 30,000-33,000.
+2. Gap Analysis:
+   - The DALYs gap narrowed from 2,000 (China lower) in 1990 to 18,000 (China much lower) by 2019.
+3. Potential Explanations:
+   - China's improvement aligns with rapid economic growth and healthcare reforms post-2000.
+   - The UK's stability may reflect plateauing health gains in a developed system with aging populations.
+4. Surprises:
+   - The magnitude of China's decline exceeded expectations given its population size.
+   - No convergence occurred despite different development stages.
+.
