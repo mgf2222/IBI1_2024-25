@@ -22,16 +22,16 @@ language_popularity = {
     "TypeScript": 38.5
 }
 
-# Display dictionary contents
+# Contain a variable for activity that can be modified
+languages = list(language_popularity.keys())
+percentages = list(language_popularity.values())
+
+# Return popularity of a given language
 print("Programming Language Popularity Data:")
 print(language_popularity)
 
 # Generate bar plot visualization
 import matplotlib.pyplot as plt
-
-# Configure plot data
-languages = list(language_popularity.keys())
-percentages = list(language_popularity.values())
 
 # Initialize plot canvas
 plt.figure(figsize=(10, 6))
