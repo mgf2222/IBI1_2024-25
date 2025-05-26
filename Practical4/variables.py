@@ -27,7 +27,7 @@ elif c < f:
 else:
     print("bus transportation is as fast as car transportarion")
 # Since c is 90 and f is 95, c > f is False, so "The car commute is quicker." will be printed
-# The car commute is quicker because f (95 minutes) is less than c (90 minutes)
+# The car commute is quicker because f (95 minutes) is larger than c (90 minutes)
 
 # Boolean variables
 
