@@ -55,7 +55,7 @@ plt.plot(uk.Year, uk.DALYs, 'b+')  # 'b+' = blue plus markers
 plt.title("UK DALYs Trend Over Time")
 plt.xlabel("Year")
 plt.ylabel("DALYs per 100,000")
-plt.xticks(rotation=45)  # Rotate x-axis labels[14,16](@ref)
+plt.xticks(uk.Year,rotation=45)  # Rotate x-axis labels[14,16](@ref)
 plt.tight_layout()  # Adjust layout[18,19](@ref)
 plt.show()
 
@@ -97,7 +97,7 @@ plt.plot(uk_data.Year, uk_data.DALYs, 'b--', label='UK')
 plt.title("DALYs Trend Comparison: China vs UK")
 plt.xlabel("Year")
 plt.ylabel("DALYs per 100,000")
-plt.xticks(rotation=45)          # Rotate x-axis labels for readability
+plt.xticks(uk.Year,rotation=45)          # Rotate x-axis labels for readability
 plt.grid(True, alpha=0.3)       # Add semi-transparent gridlines
 plt.legend()                    # Show data labels
 plt.tight_layout()              # Optimize spacing[8](@ref)
