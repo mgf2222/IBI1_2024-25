@@ -1,5 +1,6 @@
 import re
-
+import os
+os.chdir('Practical7')
 def extract_gene_name(header_line):
     parts = header_line.split()
     for part in parts:
