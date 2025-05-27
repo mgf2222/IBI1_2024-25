@@ -1,5 +1,5 @@
 Question: How has the DALYs trend in China compared to the United Kingdom from 1990 to 2019?
-Code Line: Line 75 (filtering and plotting code starts here)
+Code Line: Line 40 (filtering and plotting code starts here)
 Result Discussion:
 1. Trend Observations:
    - China's DALYs decreased significantly from ~28,000 (1990) to ~15,000 (2019), a 46% reduction.
@@ -11,5 +11,4 @@ Result Discussion:
    - The UK's stability may reflect plateauing health gains in a developed system with aging populations.
 4. Surprises:
    - The magnitude of China's decline exceeded expectations given its population size.
-   - No convergence occurred despite different development stages.
-.
+
