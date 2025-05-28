@@ -9,7 +9,7 @@ gamma = 0.05
 num_time_steps = 1000
 
 # Vaccination percentages to simulate
-vaccination_percentages = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+vaccination_percentages = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8,0.9,1.0]
 colors = cm.viridis(np.linspace(0, 1, len(vaccination_percentages)))
 
 plt.figure(figsize=(10, 6))

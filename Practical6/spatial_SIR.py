@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 
 # Parameters
-beta = 0.2  # Infection rate per neighbor
-gamma = 0.1  # Recovery rate
+beta = 0.3 # Infection rate per neighbor
+gamma = 0.05  # Recovery rate
 time_steps = 100
 grid_size = 100
 
