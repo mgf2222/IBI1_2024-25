@@ -1,5 +1,6 @@
 import re
-
+import os
+os.chdir('Practical7')
 def extract_gene_name(header_line):
     parts = header_line.split()
     for part in parts:
@@ -34,7 +35,7 @@ def main():
                     tata_matches = tata_pattern.findall(full_sequence)
                     if tata_matches:
                         tata_count = len(tata_matches)
-                        outfile.write(f'>{current_gene_name}_{tata_count}\n')
+                        outfile.write(f'>{current_gene_name}_TATA_count:{tata_count}\n')
                         outfile.write(f'{full_sequence}\n')
                 # Parse the new header
                 header_content = line[1:].strip()
@@ -49,7 +50,7 @@ def main():
             tata_matches = tata_pattern.findall(full_sequence)
             if tata_matches:
                 tata_count = len(tata_matches)
-                outfile.write(f'>{current_gene_name}_{tata_count}\n')
+                outfile.write(f'>{current_gene_name}_TATA_count:{tata_count}\n')
                 outfile.write(f'{full_sequence}\n')
     
     print(f"Processing complete. Output written to {output_filename}")
