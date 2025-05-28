@@ -1,7 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import cm
-
+import os
+os.chdir('Practical6')
 # Parameters
 N = 10000
 beta = 0.3

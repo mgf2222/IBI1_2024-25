@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+import os
+os.chdir('Practical6')
 # Define initial parameters
 N = 10000  # Total population
 beta = 0.3  # Infection rate
