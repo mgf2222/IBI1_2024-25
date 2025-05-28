@@ -5,4 +5,6 @@ In the fourth week, there was an error in the comments when comparing the sizes 
 quicker because f (95 minutes) is less than c (90 minutes)" to "# The car commute is quicker because f (95 minutes) is larger than c (90 
 minutes)".
 
-In the fifth week, language_popularity.py didn't contain a a variable for activity that can be modified. So I add two variables language and percentages.
+In the fifth week, language_popularity.py didn't contain a a variable for activity that can be modified. So I add a variable language and the code will return popularity of a given language.
+language = "JavaScrip". print(f"The percentage of the users of {language} is {language_popularity[language]}.")
+
