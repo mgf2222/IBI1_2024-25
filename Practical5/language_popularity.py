@@ -22,7 +22,7 @@ language_popularity = {
     "TypeScript": 38.5
 }
 
-# Contain a variable for activity that can be modified
+
 languages = list(language_popularity.keys())
 percentages = list(language_popularity.values())
 
@@ -57,4 +57,7 @@ plt.grid(axis='y', alpha=0.3)
 plt.tight_layout()
 plt.show()
 
-
+# Contain a variable for activity that can be modified
+language = "JavaScript"
+#print the percentage of the users of the chosen language
+print(f"The percentage of the users of {language} is {language_popularity[language]}.")
