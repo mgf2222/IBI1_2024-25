@@ -1,6 +1,6 @@
 '''
-se regular expression to find all substrings that start with "GT" and end with "AG"
-The pattern 'GT\w+AG' matches any substring starting with GT, followed by one or more word characters (A, T, C, G), ending with AG
+se regular expression to find all substrings that start with GT and end with AG
+The pattern GT AG matches any substring starting with GT, followed by one or more word characters (A, T, C, G), ending with AG
 Initialize variable to store the length of the largest intron found
 Iterate through each matched intron
 Calculate the length of the current intron
