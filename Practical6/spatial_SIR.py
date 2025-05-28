@@ -2,6 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 
+"""Copy the current population grid.
+Find all currently infected cells.
+For each infected cell, check its 8 neighbors; infect each susceptible neighbor with probability beta.
+For each infected cell, recover with probability gamma.
+Update the population grid.
+If it's the last time step or every 10th time step, clear the plot, display the updated grid with the colormap, set the title to the current time step, remove axes, and pause briefly for animation."""
+
 # Parameters
 beta = 0.3 # Infection rate per neighbor
 gamma = 0.05  # Recovery rate

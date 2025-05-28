@@ -1,6 +1,17 @@
 import re
 import os
+"""
+The provided Python code first sets the working directory to "Practical7", then defines two functions: `extract_gene_name` 
+to extract gene names from header lines and `main` to handle the core processing.
+In the `main` function, it prompts the user to enter one of the valid splice donor/acceptor combinations (GTAG, GCAG, ATAC), validates the input, and processes a FASTA file (`Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa`). 
+For each gene entry in the file, it extracts the gene name, accumulates the sequence, and after processing all lines, checks for TATA box motifs using a regular expression. 
+If TATA box motifs are found, it writes the gene sequence along with the count of TATA motifs to an output file named based on the user's input. Finally, it prints a completion message with the output file name.
+"""
+
+# Set working directory
 os.chdir('Practical7')
+#If the file cannot be read correctly, use the absolute path below
+#os.chdir(r"D:\IBI\IBImidterm\IBI1_2024-25\Practical7")
 def extract_gene_name(header_line):
     parts = header_line.split()
     for part in parts:
