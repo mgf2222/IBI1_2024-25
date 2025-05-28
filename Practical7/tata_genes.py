@@ -1,6 +1,9 @@
 import re
 import os
+# Set working directory
 os.chdir('Practical7')
+#If the file cannot be read correctly, use the absolute path below
+#os.chdir(r"D:\IBI\IBImidterm\IBI1_2024-25\Practical7")
 def extract_gene_name(header_line):
     parts = header_line.split()
     for part in parts:

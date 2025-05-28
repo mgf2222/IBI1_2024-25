@@ -4,7 +4,9 @@ import xml.sax
 from datetime import datetime
 
 # Set working directory
-os.chdir(r"D:\IBI\IBImidterm\IBI1_2024-25\Practical14")
+os.chdir('Practical14')
+#If the file cannot be read correctly, use the absolute path below
+#os.chdir(r"D:\IBI\IBImidterm\IBI1_2024-25\Practical14")
 
 # ======================== DOM Parsing ========================
 def dom_analysis():

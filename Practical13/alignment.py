@@ -1,8 +1,10 @@
 # import the necessary libraries
 import os
 
-# change the working directory to the location of the script
-os.chdir(r"d:\IBI\IBImidterm\IBI1_2024-25\Practical13")
+# Set working directory
+os.chdir('Practical13')
+#If the file cannot be read correctly, use the absolute path below
+#os.chdir(r"D:\IBI\IBImidterm\IBI1_2024-25\Practical13")
 
 # function to read FASTA files
 def read_fasta(file):

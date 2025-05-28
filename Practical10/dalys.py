@@ -3,7 +3,10 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 # Set working directory
-os.chdir("D:/IBI/IBImidterm/IBI1_2024-25/Practical10")
+os.chdir('Practical10')
+#If the file cannot be read correctly, use the absolute path below
+#os.chdir(r"D:\IBI\IBImidterm\IBI1_2024-25\Practical10")
+
 # Load data
 dalys_data = pd.read_csv("dalys-rate-from-all-causes.csv")
 
