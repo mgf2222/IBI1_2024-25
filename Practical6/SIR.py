@@ -20,7 +20,7 @@ num_time_steps = 1000
     determine new recoveries based on recovery rate
     update the compartments S, I, R'''
 # Simulate over time
-for _ in range(num_time_steps):
+for i in range(num_time_steps):
     current_S = S[-1]
     current_I = I[-1]
     current_R = R[-1]
@@ -30,13 +30,13 @@ for _ in range(num_time_steps):
     
     # Determine new infections
     if current_S > 0:
-        new_infections = np.random.choice([0, 1], size=current_S, p=[1 - infection_prob, infection_prob]).sum()
+        new_infections = np.random.choice(range(2), size=current_S, p=[1 - infection_prob, infection_prob]).sum()
     else:
         new_infections = 0
     
     # Determine new recoveries
     if current_I > 0:
-        new_recoveries = np.random.choice([0, 1], size=current_I, p=[1 - gamma, gamma]).sum()
+        new_recoveries = np.random.choice(range(2), size=current_I, p=[1 - gamma, gamma]).sum()
     else:
         new_recoveries = 0
     
@@ -46,7 +46,7 @@ for _ in range(num_time_steps):
     R.append(current_R + new_recoveries)
 
 # Plot the results
-plt.figure(figsize=(10, 6))
+plt.figure(figsize=(10, 6),dpi=150)
 plt.plot(S, label='Susceptible')
 plt.plot(I, label='Infected')
 plt.plot(R, label='Recovered')
